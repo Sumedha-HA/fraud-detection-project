@@ -1,8 +1,0 @@
-transaction_id,user_id,amount,currency,transaction_type,transaction_status,timestamp,merchant_id,merchant_category,location_user,location_merchant,device_id,ip_address,channel,retry_count,previous_fraud_flag,hour
-TXN013,U010,500000,INR,bank_transfer,success,2025-11-25 10:10:18,M1009,services,Delhi,unknown,DV121,10.0.0.45,web,0,0,10
-TXN004,U001,155000,INR,UPI,success,2025-11-25 01:25:32,M1004,unknown,Bangalore,Chennai,DV001,192.168.1.45,mobile_app,0,1,1
-TXN002,U002,75000,INR,unknown,success,2025-11-25 09:17:10,M1002,electronics,Delhi,Delhi,DV031,172.16.5.21,web,1,0,9
-TXN005,U004,2200,INR,UPI,pending,2025-11-25 09:28:47,M1005,recharge,Mumbai,Mumbai,DV051,172.16.1.55,mobile_app,1,0,9
-TXN009,U007,150000,INR,UPI,success,2025-11-25 09:50:05,M1007,gambling,Chennai,Goa,DV092,10.0.0.88,mobile_app,2,1,9
-TXN011,U002,80000,INR,card,success,2025-11-25 12:53:27,M1002,electronics,Delhi,Delhi,DV031,172.16.5.21,web,1,0,12
-TXN015,U011,10500,INR,UPI,success,2025-11-25 10:18:59,M1004,travel,Mumbai,Chennai,DV168,172.16.6.33,mobile_app,1,0,10
