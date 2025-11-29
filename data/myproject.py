@@ -1,6 +1,6 @@
 #Loading csv file
 import pandas as pd
-df = pd.read_csv("transactions.csv")
+df = pd.read_csv("src/transactions.csv")
 
 """Data cleaning processes"""
 
@@ -30,15 +30,15 @@ df.fillna({
 df.reset_index(drop=True, inplace=True)
 
 #writing to cleaned csv file
-df.to_csv("transactions_cleaned.csv", index=False)
+df.to_csv("src/transactions_cleaned.csv", index=False)
 
 #display of before and after cleaning
-before_df = pd.read_csv("transactions.csv")
+before_df = pd.read_csv("src/transactions.csv")
 print("\n===== BEFORE CLEANING =====")
 print(before_df.head())
 print(before_df.info())
 print(before_df.isnull().sum())
-cleaned_df = pd.read_csv("transactions_cleaned.csv")
+cleaned_df = pd.read_csv("src/transactions_cleaned.csv")
 print("\n===== AFTER CLEANING =====")
 print(cleaned_df.head())
 print(cleaned_df.info())
@@ -78,7 +78,7 @@ print(f"Total unique fraud cases detected: {len(fraud_cases)}")
 print("\nFraud cases are:",fraud_cases)
 
 #writing to fraud cases csv file
-fraud_cases.to_csv("fraud_cases.csv",index=False)
+fraud_cases.to_csv("src/fraud_cases.csv",index=False)
 
 #calculating risk score and adding risk score & risk level &fraud label to fraud cases csv
 fraud_cases['risk_score'] = 0
@@ -90,7 +90,7 @@ fraud_cases.loc[fraud_cases['merchant_category'].isin(sus_merchant), 'risk_score
 
 #labels for high risk transactions
 fraud_cases['risk_level'] = fraud_cases['risk_score'].apply(lambda x: "HIGH" if x >= 50 else "LOW")
-fraud_cases.to_csv("fraud_cases.csv",index=False)
+fraud_cases.to_csv("src/fraud_cases.csv",index=False)
 
 #reporting high risk transactions
 high_fraud_cases = fraud_cases[fraud_cases['risk_level'] == "HIGH"]
