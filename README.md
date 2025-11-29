@@ -1,6 +1,9 @@
 # fraud-detection-project
 Analyzes transaction CSV data, calculates risk scores, and identifies high-risk transactions.
 
+## 📝 Project Code
+[myproject.py](myproject.py)
+
 ## 📁 Dataset Files
 
 ### 📥 Input Dataset
