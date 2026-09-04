@@ -1,22 +1,22 @@
-# fraud-detection-project
-Analyzes transaction CSV data, calculates risk scores, and identifies high-risk transactions.
+ # Fraud Detection Project
 
-## 📝 Project Code
-[myproject.py](myproject.py)
+A Python-based project that analyzes transaction data and identifies potentially fraudulent transactions using risk-based analysis.
 
-## 📁 Dataset Files
+ 🛠️ Technologies
 
-### 📥 Input Dataset
-You can view the input transaction dataset here:  
-➡️ **[transactions.csv](transactions.csv)**
+Python • Pandas
 
-### 🧼 Cleaned Dataset
-This is the dataset after cleaning, preprocessing, and filtering invalid entries:  
-➡️ **[transactions_cleaned.csv](transactions_cleaned.csv)**
+ 🔄 Workflow
 
-### 🚨 Fraud Cases (Output)
-These are the transactions that were flagged as high-risk or suspicious:  
-➡️ **[fraud_cases.csv](fraud_cases.csv)**
+Data Cleaning → Risk Scoring → Fraud Detection
 
+ 📂 Dataset
 
+- transactions.csv — Original data
+- transactions_cleaned.csv — Cleaned data
+- fraud_cases.csv — Identified high-risk transactions
 
+ 🚀 Run
+
+```bash
+python data/my_project.py
